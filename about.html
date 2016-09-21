@@ -1,0 +1,133 @@
+---
+layout: page
+title: "About"
+description: "Hey, this is Zman."
+header-img: "img/post-bg-js-version.jpg"
+---
+
+<!-- Language Selector -->
+<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> 中文 Chinese </option>
+    <option value="1"> 英文 English </option>
+</select>
+
+<!-- Chinese Version -->
+<div class="zh post-container">
+
+    <!--copied from markdown -->
+    <blockquote><p>写写代码, 随便玩玩<br>
+    世界那么大，我想去看看。</p></blockquote>
+
+    <h5 id ="123">Hey，我是<strong>李泽慢</strong>，<a href="http://www.sfls.net.cn">深圳外国语学校AP-19的一名普通学生</a> &amp; 未来想当一名合格程序猿，准备去美国读大U读CS专业，dream school---<strong><a href="http://www.cmu.edu">CMU</a></strong></h5>
+<br><br>
+    <h5 id ="1234">一些作品和开源项目，👉 戳 <a href="http://github.com/lizeman">Github</a>；除了在博客写点东西外，我也是一名合格的好学生。。。~~~^_^~~~ </h5>
+
+    <h5>Talks</h5>
+
+    <ul>
+    <li><a href="http://huangxuan.me/2016/06/05/pwa-in-my-pov/">Progressive Web App 之我见 · 2016</a></li>
+    <li><a href="http://huangxuan.me/2015/12/28/css-sucks-2015/">CSS Still Sucks 2015 · 2015</a></li>
+    <li><a href="http://huangxuan.me/2015/07/09/js-module-7day/">JavaScript 模块化七日谈 · 2015</a></li>
+    </ul>
+
+    <h5>Resumes</h5>
+
+    <ul>
+    <li><a href="/attach/2016_Hux_en_SE.pdf">2016_Hux_en_SE &amp; FE</a></li>
+    <li><a href="attach/2016_Hux_en_PD.pdf">2016_Hux_en_PD &amp; UX</a></li>
+    </ul>
+	<br><br><br>
+<h4>时间仓促，在所不足，如有什么bug或建议，请在下面留言。O(∩_∩)O谢谢指教</h4>
+
+</div>
+
+<!-- English Version -->
+<div class="en post-container">
+    <blockquote><p>Yet another Frontend Engineer. <br>
+    Yet another Lifelong Designer.</p></blockquote>
+
+    <p>Hi, Here is <strong>LEE ZEMAN (李泽慢）</strong>，you can call me nickname <strong>Hux</strong>. I'm engineer &amp; designer who is loving to build software such as <a href="http://yanshuo.io">Yanshuo.io</a> and more (<a href="/portfolio">Portfolio 👉 </a> and <a href="http://github.com/huxpro">Github 👉 </a>). I studied Digital Media Art at <a href="https://en.wikipedia.org/wiki/Communication_University_of_China">Communication University of China</a> class of 2016.</p>
+
+    <p>As a engineer, I work at Wepiao (<a href="https://www.crunchbase.com/organization/wepiao#/entity">see CrunchBase</a>) as the dev lead of Front-End Infrastructure Team currently, and <a href="https://www.alitrip.com/">Alibaba Trip</a> as Intern for one year previously. As a designer, I am ever offered as UI/UX Designer Intern by Alibaba, Microsoft etc.</p>
+
+    <p>More than a blogger, I'm also translator at <a href="http://www.gfansub.com/">GDG China Subtitle Team</a>, maintainer at <a href="http://zhuanlan.zhihu.com/FrontendMagazine">Frontend Magazine</a> and owner of <a href="http://zhuanlan.zhihu.com/huxblog">Lifelong Romantic Geek</a>.</p>
+
+    <h5>Talks</h5>
+
+    <ul>
+    <li><a href="http://huangxuan.me/2016/06/05/pwa-in-my-pov/">Progressive Web App in my pov · 2016</a></li>
+    <li><a href="http://huangxuan.me/2015/12/28/css-sucks-2015/">CSS Still Sucks 2015 · 2015</a></li>
+    <li><a href="http://huangxuan.me/2015/07/09/js-module-7day/">JavaScript Modularization Journey · 2015</a></li>
+    </ul>
+
+    <h5>Resumes</h5>
+
+    <ul>
+    <li><a href="/attach/2016_Hux_en_SE.pdf">2016_Hux_en_SE &amp; FE</a></li>
+    <li><a href="attach/2016_Hux_en_PD.pdf">2016_Hux_en_PD &amp; UX</a></li>
+    </ul>
+</div>
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    // get nodes
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    var $select = document.querySelector("select");
+
+    // bind hashchange event
+    window.addEventListener('hashchange', _render);
+
+    // handle render
+    function _render(){
+        var _hash = window.location.hash;
+        // en
+        if(_hash == "#en"){
+            $select.selectedIndex = 1;
+            $en.style.display = "block";
+            $zh.style.display = "none";
+        // zh by default
+        }else{
+            // not trigger onChange, otherwise cause a loop call.
+            $select.selectedIndex = 0;
+            $zh.style.display = "block";
+            $en.style.display = "none";
+        }
+    }
+
+    // handle select change
+    function onLanChange(index){
+        if(index == 0){
+            window.location.hash = "#zh"
+        }else{
+            window.location.hash = "#en"
+        }
+    }
+
+-    // init
+ -    _render();
+ </script>
+
+
+
+
+{% if site.duoshuo_username %}
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="123" data-title="随便说说" data-url="http://lizeman.github.io/about"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"lizeman123"};
+		(function() {
+					var ds = document.createElement('script');
+							ds.type = 'text/javascript';ds.async = true;
+									ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+											ds.charset = 'UTF-8';
+													(document.getElementsByTagName('head')[0] 
+															 || document.getElementsByTagName('body')[0]).appendChild(ds);
+															 	})();
+																	</script>
+																	<!-- 多说公共JS代码 end -->
+{% endif %}
+
+
