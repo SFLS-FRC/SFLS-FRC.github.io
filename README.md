@@ -1,6 +1,6 @@
-###David Blog
+###SFLS_-FRC Webpage
 
-###[View Live David Blog &rarr;](http://lizeman.github.io)
+###[View Live Webpage &rarr;](http://sfls-frc.github.io)
 
 ![](http://huangxuan.me/img/blog-desktop.jpg)
 
