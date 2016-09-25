@@ -15,9 +15,9 @@ tags:
 
 
 ### [Watch Slides → ](http://reelapp.com/a2c1ed)
+<iframe src="http://www.reelapp.com/a2c1ed/embed" scrolling="no" width="400" height="604" frameborder="0" allowTransparency="false"></iframe>
 
 <img src="http://huangxuan.me/pwa-in-my-pov/attach/qrcode.png" width="350" />
-
 ### Catalog
 
 - WHAT is Progressive Web App?
