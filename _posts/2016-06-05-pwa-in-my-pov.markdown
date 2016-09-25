@@ -2,7 +2,7 @@
 layout:     keynote
 title:      "Progressive Web App 之我见"
 subtitle:   "Slides: Progressive Web App, in my points of view"
-iframe:     "http://www.reelapp.com/072af3/embed"
+iframe:     "http://www.reelapp.com/a2c1ed/embed"
 date:       2016-06-05
 author:     "Hux"
 tags:
@@ -14,7 +14,7 @@ tags:
 > 下滑这里查看更多内容
 
 
-### [Watch Slides → ](http://reelapp.com/072af3)
+### [Watch Slides → ](http://reelapp.com/a2c1ed)
 
 <img src="http://huangxuan.me/pwa-in-my-pov/attach/qrcode.png" width="350" />
 
