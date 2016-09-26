@@ -15,9 +15,8 @@ tags:
 
 
 ### [Watch Slides → ](http://reelapp.com/a2c1ed)
-<div style="margin: 0px;height: 580px;width:960px;"> 
 
-rc="http://www.reelapp.com/33a863/embed" scrolling="no" width="400" height="556" frameborder="0" allowTransparency="false"></iframe>/div> 
+<iframe src="http://www.reelapp.com/33a863/embed" scrolling="no" width="400" height="556" frameborder="0" allowTransparency="false"></iframe
 <img src="http://huangxuan.me/pwa-in-my-pov/attach/qrcode.png" width="350" />
 ### Catalog
 
